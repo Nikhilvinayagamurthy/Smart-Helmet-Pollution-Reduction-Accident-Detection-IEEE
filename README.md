@@ -153,7 +153,7 @@ See `Smart_Helmet_IEEE_Paper.pdf` for full flow chart, circuit diagrams, hardwar
 - Arduino Uno, GSM, GPS, accelerometer, vibration sensor integration
 - Motor driver control (L298) for DC fan speed regulation
 - PM2.5 optical dust sensor calibration and data logging
-- IoT system design — multi-module integration and self-check logic
+- IoT system design - multi-module integration and self-check logic
 - Real-time SMS alerting via GSM with GPS coordinate payload
 
 ---
