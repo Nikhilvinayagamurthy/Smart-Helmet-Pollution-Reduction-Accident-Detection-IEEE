@@ -141,7 +141,7 @@ See `Smart_Helmet_IEEE_Paper.pdf` for full flow chart, circuit diagrams, hardwar
 
 **Published in:** IEEE Conference Proceedings
 
-**IEEE Xplore DOI:** *(add your DOI link here — find it at ieeexplore.ieee.org)*
+**IEEE Xplore DOI:** *(https://ieeexplore.ieee.org/document/10593979)*
 
 **Authors:** Janardhan B V · Naveen Kumar G N · Bhavana Lakshman H · Meenakshi R Patil · **Nikhil Vinayagamurthy** · Tejas B N · Adithya M G
 
@@ -165,4 +165,3 @@ Department of Mechanical Engineering & Department of Electronics and Communicati
 
 ---
 
-*Full paper available in [`Smart_Helmet_IEEE_Paper.pdf`](./Smart_Helmet_IEEE_Paper.pdf)*
