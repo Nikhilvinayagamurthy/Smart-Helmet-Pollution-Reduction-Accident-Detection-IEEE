@@ -1,10 +1,12 @@
 # Smart Helmet with Pollution Reduction System, Accident Detection and Alerting System
 
-> **IEEE Conference Publication | CMR Institute of Technology, Bengaluru | 2023**
+> **Proc. IEEE ICECCC 2024 | CMR Institute of Technology, Bengaluru | May 2024**
 
 > Department of Mechanical Engineering & Electronics and Communication Engineering
 
 > **Authors:** Janardhan B V, Naveen Kumar G N, Bhavana Lakshman H, Meenakshi R Patil, **Nikhil Vinayagamurthy**, Tejas B N, Adithya M G
+
+> **My role:** Co-author. Worked on both subsystems, the pollution reduction system and the accident detection and alerting system. Presented the paper at ICECCC 2024.
 
 ---
 
@@ -12,15 +14,15 @@
 
 A smart helmet integrating two independently functional embedded systems to address two critical problems faced by motorcycle riders in urban India: **chronic exposure to particulate air pollution** and **delayed emergency response in accidents**.
 
-The **Pollution Reduction System (PRS)** uses a three-layer filter stack driven by an Arduino-controlled DC fan to continuously supply purified air to the rider. The **Accident Detection and Alerting System (ADAS)** monitors vibration and acceleration in real time, and automatically dispatches an SMS with a GPS map link to emergency contacts when a true accident is detected — without any rider action required.
+The **Pollution Reduction System (PRS)** uses a three-layer filter stack driven by an Arduino-controlled DC fan to continuously supply purified air to the rider. The **Accident Detection and Alerting System (ADAS)** monitors vibration and acceleration in real time, and automatically dispatches an SMS with a GPS map link to emergency contacts when a true accident is detected - without any rider action required.
 
-Validated on road in a polluted urban environment, the system demonstrated measurable reduction of particulate matter inside the helmet compared to ambient air levels across a 10-minute continuous test.
+Validated on road in a polluted urban environment, the system showed lower particulate readings inside the helmet than in the ambient air across a 10-minute continuous test.
 
 ---
 
 ## Research Problem
 
-> *How can a wearable system autonomously reduce a motorcycle rider's inhalation of PM1.0–PM10 particulates and simultaneously ensure sub-2-minute emergency notification with GPS precision in the event of an accident — without requiring any manual intervention from the rider?*
+> *How can a helmet reduce a motorcycle rider's inhalation of polluted air and, after an accident, automatically alert emergency contacts with the GPS location, while filtering out false alarms such as a dropped helmet?*
 
 ---
 
@@ -48,7 +50,7 @@ Helmet ON → Module self-check → PRS + ADAS both activate simultaneously
 
 ## Two-System Design
 
-### System 1 — Pollution Reduction System (PRS)
+### System 1 - Pollution Reduction System (PRS)
 
 The PRS draws external air through a three-stage filter stack, removing particulates across a full size range before the air reaches the rider.
 
@@ -56,13 +58,13 @@ The PRS draws external air through a three-stage filter stack, removing particul
 |---|---|---|---|
 | Layer 1 | Polypropylene | ~10 µm | Dust, sand particles |
 | Layer 2 | Silicon Carbide | ~2.5 µm | Fine particulates (PM2.5) |
-| Layer 3 | Activated Carbon | Sub-micron | Bacteria, fungi, viruses |
+| Layer 3 | Activated Carbon | Not specified | Bacteria, fungi, viruses |
 
 - Airflow controlled by **Arduino Uno + L298 motor driver** driving a **12V DC fan**
 - Inlet and outlet valves regulate internal pressure for rider breathing comfort
 - Fan speed adjustable to vary clean air volume
 
-### System 2 — Accident Detection and Alerting System (ADAS)
+### System 2 - Accident Detection and Alerting System (ADAS)
 
 | Component | Role |
 |---|---|
@@ -103,10 +105,10 @@ The inside-helmet readings remained well below ambient levels across the full 10
 
 ### Accident Detection System
 
-| Scenario | Outcome |
+| Scenario | System behaviour |
 |---|---|
 | Helmet dropped (false accident) | Buzzer triggered; reset pressed within 2 min → no SMS sent |
-| Simulated true accident (no reset) | GPS collected; SMS + Google Maps link sent to emergency contact within 2-minute window |
+| Simulated true accident (no reset) | GPS collected; SMS + Google Maps link sent to emergency contact after the 2-minute window expires |
 | System startup | Welcome SMS sent to synced contacts confirming all modules operational |
 
 ---
@@ -131,7 +133,7 @@ The inside-helmet readings remained well below ambient levels across the full 10
 
 **Startup → Module Check → PRS + ADAS Active → Continuous Monitoring → Accident Logic → Emergency Alert**
 
-See `Smart_Helmet_IEEE_Paper.pdf` for full flow chart, circuit diagrams, hardware photographs, and sensor placement details.
+See the [paper on IEEE Xplore](https://ieeexplore.ieee.org/document/10593979) for the full flow chart, circuit diagrams, hardware photographs and sensor placement details.
 
 ---
 
@@ -139,9 +141,9 @@ See `Smart_Helmet_IEEE_Paper.pdf` for full flow chart, circuit diagrams, hardwar
 
 **Title:** Smart Helmet With Pollution Reduction System, Accident Detection And Alerting System
 
-**Published in:** IEEE Conference Proceedings
+**Published in:** Proc. 2024 International Conference on Electronics, Communication, Computing and Control Technology, ICECCC 2024, CMR Institute of Technology, Bengaluru, 2-3 May 2024
 
-**IEEE Xplore DOI:** *(https://ieeexplore.ieee.org/document/10593979)*
+**IEEE Xplore:** https://ieeexplore.ieee.org/document/10593979
 
 **Authors:** Janardhan B V · Naveen Kumar G N · Bhavana Lakshman H · Meenakshi R Patil · **Nikhil Vinayagamurthy** · Tejas B N · Adithya M G
 
@@ -152,7 +154,7 @@ See `Smart_Helmet_IEEE_Paper.pdf` for full flow chart, circuit diagrams, hardwar
 - Embedded C / Arduino IDE
 - Arduino Uno, GSM, GPS, accelerometer, vibration sensor integration
 - Motor driver control (L298) for DC fan speed regulation
-- PM2.5 optical dust sensor calibration and data logging
+- PM2.5 optical dust sensor data logging
 - IoT system design - multi-module integration and self-check logic
 - Real-time SMS alerting via GSM with GPS coordinate payload
 
@@ -164,4 +166,3 @@ See `Smart_Helmet_IEEE_Paper.pdf` for full flow chart, circuit diagrams, hardwar
 Department of Mechanical Engineering & Department of Electronics and Communication Engineering
 
 ---
-
